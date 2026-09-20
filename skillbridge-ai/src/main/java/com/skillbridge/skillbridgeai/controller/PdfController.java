@@ -1,3 +1,4 @@
+
 package com.skillbridge.skillbridgeai.controller;
 
 import com.skillbridge.skillbridgeai.service.PdfService;
@@ -7,7 +8,10 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://worthy-radiance-production-eb6f.up.railway.app"
+})
 @RestController
 @RequestMapping("/api/pdf")
 public class PdfController {
@@ -29,3 +33,4 @@ public class PdfController {
         return pdfService.extractText(file);
     }
 }
+
