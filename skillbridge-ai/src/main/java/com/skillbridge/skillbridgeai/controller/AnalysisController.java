@@ -8,7 +8,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://worthy-radiance-production-eb6f.up.railway.app"
+})
 @RestController
 @RequestMapping("/api/analysis")
 public class AnalysisController {
