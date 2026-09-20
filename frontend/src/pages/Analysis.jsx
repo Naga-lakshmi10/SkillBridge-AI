@@ -47,7 +47,7 @@ function Analysis() {
 
     try {
       const response = await fetch(
-        "http://localhost:8080/api/pdf/extract",
+        "https://skillbridge-ai-production-9fbb.up.railway.app/api/pdf/extract",
         {
           method: "POST",
           body: formData,
@@ -129,7 +129,7 @@ function Analysis() {
 
     try {
       const response = await fetch(
-        "http://localhost:8080/api/analysis",
+        "https://skillbridge-ai-production-9fbb.up.railway.app/api/analysis",
         {
           method: "POST",
           headers: {
